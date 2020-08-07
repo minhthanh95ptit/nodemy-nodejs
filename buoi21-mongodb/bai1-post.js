@@ -61,7 +61,7 @@ PostModel.find({
 
 
 console.log("---Cập nhật 1 giá trị của content theo 1 id---")
-PostModel.updateMany({
+PostModel.updateOne({
     _id: "5f2c29913ddeca20c2fce2b2"
 },{
     content: "Việt Nam vô đối là những câu chuyện dựa trên một số thói xấu của một số người trong xã hội để phên phán, châm biếm đả kích nhưng mang lại tiếng cười sảng "
