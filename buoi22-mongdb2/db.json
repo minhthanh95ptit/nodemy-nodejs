@@ -1,0 +1,8 @@
+{"_id":{"$oid":"5e5357a3ecabbb0a3c6af690"},"username":"ta11111111","password":"1","age":{"$numberInt":"50"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5e5357ad6c68bf0be4dd57e7"},"username":"taaaaaaaaaaaa","password":"1","age":{"$numberInt":"30"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5e54dfb5cef6db46b83d11c2"},"username":"ta","password":"1","age":{"$numberInt":"30"},"address":"HN","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5e54dfd1ae8eac34d01da3bf"},"username":"son","password":"1","age":{"$numberInt":"22"},"address":"HP","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5e54dfe448afde5434ca75b9"},"username":"dat","password":"1","age":{"$numberInt":"21"},"address":"HCM","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5e54dff4a9fc153d4cd2f037"},"username":"thanh","password":"1","age":{"$numberInt":"21"},"address":"Nghe An","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5e54e012d276b72fd4246734"},"username":"lam","password":"1","age":{"$numberInt":"21"},"address":"HP","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5e54e0288122a14dc4374f11"},"username":"Khiem","password":"1","age":{"$numberInt":"23"},"address":"Bac Giang","__v":{"$numberInt":"0"}}
