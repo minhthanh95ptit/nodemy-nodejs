@@ -4,8 +4,8 @@ const app = express();
 const router1 = require('./routers/javascript');
 const router2 = require('./routers/html');
 
-app.use('/nodemy', router1)
-app.use('/nodemy', router2)
-app.listen(8000, (req, res) =>{
+app.use('/nodemy', router1,router2)
+
+app.listen(8001, (req, res) =>{
     console.log("RUNNING...");
 })

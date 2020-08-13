@@ -29,9 +29,9 @@ app.post('/', (req, res) =>{
     })
 })
 
-app.get('/:username/:password',(req, res) =>{
+app.get('/:username',(req, res) =>{
     var username = req.params.username;
-    var password = req.params.password;
+    var password = req.body.password;
 
     AccountModel.find({
         username: username,
@@ -39,10 +39,10 @@ app.get('/:username/:password',(req, res) =>{
     })
     .then(data =>{
         if(data){
-           res.json(data) 
+           return res.json(data) 
         }
         else{
-            res.json('Không tìm thấy tài khoản.')
+            return res.json('Không tìm thấy tài khoản.')
         }
     })
     .catch(err =>{

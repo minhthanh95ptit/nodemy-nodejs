@@ -153,9 +153,7 @@ app.get('/', (req, res, next) =>{
     
     var start = (page - 1) * PAGE_SIZE;
     var end = start + PAGE_SIZE;
-    console.log(page);
-    console.log(start);
-    console.log(array);
+
 
     console.log(array.slice(start, end));
     res.json(array.slice(start, end))
