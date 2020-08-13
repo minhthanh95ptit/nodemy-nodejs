@@ -58,9 +58,30 @@ const UserModel = mongoose.model('User', UserSchema);
 //     console.log(err);
 // })
 
-UserModel.find({
-    username:'Pham Minh Thanh',
-    password:'thanhkid'
+//Tìm ra 1 bản ghi theo username, password ( nếu không tim thấy thì in ra thông báo là không tìm thấy, còn tìm thấy thì in ra thông báo )
+
+
+// UserModel.find({
+//     username:'Pham Minh Thanh',
+//     password:'thanhkid'
+// })
+// .then(data =>{
+//     if(data.length === 0){
+//         console.log("Không tìm thấy dữ liệu");
+//     }
+//     else{
+//         console.log(data);
+//     }
+    
+// })
+// .catch(err =>{
+//     console.log(err);
+// })
+    
+//Xóa 1 bản ghi theo  id
+
+UserModel.deleteOne({
+    id: "5e5357ad6c68bf0be4dd57e7"
 })
 .then(data =>{
     if(data.length === 0){
@@ -74,4 +95,23 @@ UserModel.find({
 .catch(err =>{
     console.log(err);
 })
+
+//Thực hiện tìm và in ra giới hạn chỉ in ra 3 bản ghi 
+
+UserModel.find({
+    username:'Pham Minh Thanh',
+    password:'thanhkid'
+})
+.limit(3)
+.then(data =>{
+    if(!data){
+        console.log("Không tìm thấy dữ liệu");
+    }
+    else{
+        console.log(data);
+    }
     
+})
+.catch(err =>{
+    console.log(err);
+})
